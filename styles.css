@@ -1,0 +1,304 @@
+/* إعدادات عامة للصفحة */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* صفحة تسجيل الدخول */
+.login-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.login-container button {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background-color: #34495e;
+}
+
+.login-container p {
+  color: red;
+  text-align: center;
+}
+
+
+/* الشريط الجانبي */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+.sidebar h3 {
+  color: #ecf0f1;
+  text-align: center;
+  margin: 50px 10px 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 120px;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.sidebar ul li a {
+  color: #a8c2d4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a i {
+  margin-right: 15px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+  color: #fff;
+}
+
+.sidebar ul li a.active {
+  background-color: #2771a1;
+  color: #ffffff;
+}
+
+.sidebar ul li a.active:hover {
+  background-color: #2980b9;
+}
+
+
+/* إعدادات لمحتوى الصفحة */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.content h2 {
+  color: #2c3e50;
+}
+
+
+/* تنسيق الرسائل */
+.message {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+/* إعدادات لحقول الإدخال والقوائم المنسدلة */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* تنسيق نموذج إضافة وتحديث الموظف */
+.employee-form {
+  max-width: 600px;
+  margin: 50px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.employee-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.employee-form input[type="text"],
+.employee-form input[type="email"],
+.employee-form input[type="number"] {
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.employee-form button {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: auto;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.employee-form button:hover {
+  background-color: #34495e;
+}
+
+
+/* توسيط الأيقونات داخل خلايا الجدول */
+table .actions {
+  text-align: center;
+}
+
+table .actions a {
+  margin: 0 5px;
+}
+
+
+/* إعدادات للجدول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+/* إعدادات لعرض أعمدة الجدول */
+th:nth-child(1),
+td:nth-child(1) {
+  width: 80px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 200px;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 250px;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 100px;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 150px;
+}
+
+th:nth-child(6),
+td:nth-child(6) {
+  width: 150px;
+}
+
+/* تنسيق رأس الجدول */
+th {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+/* إعدادات للصفوف الزوجية في الجدول */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* تغيير لون خلفية الصفوف عند التحويم */
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* إعدادات للروابط */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* إعدادات لشريط البحث */
+#searchInput {
+  max-width: 300px;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
